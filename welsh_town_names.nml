@@ -1,0 +1,336 @@
+grf {
+	grfid: "AM\01\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
+	version: 0;
+	min_compatible_version: 0;
+}
+
+// Welsh vowels - a, e, i, o, u, w, y
+
+// Feminine start nouns ending with a consonant
+town_names(fem_start_noun_end_cons) {
+	{
+		text("Afon", 1),
+		text("Allt", 1),
+		text("Bedd", 1),
+		text("Carn", 1),
+		text("Clog", 1),
+		text("Coed", 1),
+		text("Cors", 1),
+		text("Craig", 1),
+		text("Croes", 1),
+		text("Dinas", 1),
+		text("Dol", 1),
+		text("Eglwys", 1),
+		text("Ffin", 1),
+		text("Ffordd", 1),
+		text("Ffos", 1),
+		text("Ffridd", 1),
+		text("Ffynnon", 1),
+		text("Glan", 1),
+		text("Gwaun", 1),
+		text("Hafod", 1),
+		text("Hafn", 1),
+		text("Llan", 1),
+		text("Llannerch", 1),
+		text("Llech", 1),
+		text("Melin", 1),
+		text("Nant", 1),
+		text("Ogof", 1),
+		text("Pont", 1),
+		text("Porth", 1),
+		text("Rhaeadr", 1),
+		text("Rhos", 1),
+		text("Rhyd", 1),
+		text("Sarn", 1),
+		text("Sir", 1),
+		text("Stryd", 1),
+		text("Tref", 1),
+		text("Ynys", 1),
+		text("Ysgol", 1)
+	}
+}
+
+// Feminine start nouns ending with a vowel
+town_names(fem_start_noun_end_vow) {
+	{
+		text("Erw", 1)
+	}
+}
+
+// Masculine start nouns ending with a consonant
+town_names(masc_start_noun_end_cons) {
+	{
+		text("Aber", 1),
+		text("Betws", 1),
+		text("Blaen", 1),
+		text("Bryn", 1),
+		text("Bwlch", 1),
+		text("Caer", 1),
+		text("Capel", 1),
+		text("Castell", 1),
+		text("Cefn", 1),
+		text("Cil", 1),
+		text("Crug", 1),
+		text("Cwm", 1),
+		text("Cymer", 1),
+		text("Dŵr", 1),
+		text("Dyffryn", 1),
+		text("Garth", 1),
+		text("Glyn", 1),
+		text("Llyn", 1),
+		text("Maen", 1),
+		text("Merthyr", 1),
+		text("Môr", 1),
+		text("Mynydd", 1),
+		text("Pant", 1),
+		text("Parc", 1),
+		text("Pen", 1),
+		text("Penrhyn", 1),
+		text("Pistyll", 1),
+		text("Plas", 1),
+		text("Pwll", 1),
+		text("Tafarn", 1),
+		text("Ton", 1),
+		text("Traeth", 1),
+		text("Ystrad", 1)
+	}
+}
+
+// Masculine start nouns ending with a vowel
+town_names(masc_start_noun_end_vow) {
+	{
+		text("Cae", 1),
+		text("Cei", 1),
+		text("Morfa", 1),
+		text("Pandy", 1),
+		text("Rhiw", 1),
+		text("Tŷ", 1),
+		text("Ysbyty", 1)
+	}
+}
+
+// Feminine end nouns starting with a consonant
+town_names(fem_end_noun_start_cons) {
+	{
+		text("Fedd", 1),        // Bedd
+		text("Garn", 1),        // Carn
+		text("Glog", 1),        // Clog
+		text("Goed", 1),        // Coed
+		text("Gors", 1),        // Cors
+		text("Graig", 1),       // Craig
+		text("Groes", 1),       // Croes
+		text("Ddinas", 1),      // Dinas
+		text("Ddol", 1),        // Dol
+		text("Ffin", 1),
+		text("Ffordd", 1),
+		text("Ffos", 1),
+		text("Ffridd", 1),
+		text("Ffynnon", 1),
+		text("Lan", 1),         // Glan
+		text("Waun", 1),        // Gwaun
+		text("Lan", 1),         // Llan
+		text("Lannerch", 1),    // Llannerch
+		text("Lech", 1),        // Llech
+		text("Felin", 1),       // Melin
+		text("Nant", 1),
+		text("Bont", 1),        // Pont
+		text("Borth", 1),       // Porth
+		text("Raeadr", 1),      // Rhaeadr
+		text("Ros", 1),         // Rhos
+		text("Ryd", 1),         // Rhyd
+		text("Sarn", 1),
+		text("Sir", 1),
+		text("Stryd", 1),
+		text("Dref", 1)         // Tref
+	}
+}
+
+// Feminine end nouns starting with a vowel or "h"
+town_names(fem_end_noun_start_vow) {
+	{
+		text("Afon", 1),
+		text("Allt", 1),
+		text("Eglwys", 1),
+		text("Hafod", 1),
+		text("Hafn", 1),
+		text("Ogof", 1),
+		text("Ynys", 1),
+		text("Ysgol", 1)
+	}
+}
+
+// Masculine end nouns starting with a consonant
+town_names(masc_end_noun_start_cons) {
+	{
+		text("Betws", 1),
+		text("Blaen", 1),
+		text("Bryn", 1),
+		text("Bwlch", 1),
+		text("Cae", 1),
+		text("Caer", 1),
+		text("Capel", 1),
+		text("Castell", 1),
+		text("Cefn", 1),
+		text("Cei", 1),
+		text("Cil", 1),
+		text("Crug", 1),
+		text("Cwm", 1),
+		text("Cymer", 1),
+		text("Dyffryn", 1),
+		text("Dŵr", 1),
+		text("Garth", 1),
+		text("Glyn", 1),
+		text("Llyn", 1),
+		text("Maen", 1),
+		text("Merthyr", 1),
+		text("Morfa", 1),
+		text("Mynydd", 1),
+		text("Môr", 1),
+		text("Pandy", 1),
+		text("Pant", 1),
+		text("Parc", 1),
+		text("Pen", 1),
+		text("Penrhyn", 1),
+		text("Pistyll", 1),
+		text("Plas", 1),
+		text("Pwll", 1),
+		text("Rhiw", 1),
+		text("Tafarn", 1),
+		text("Ton", 1),
+		text("Traeth", 1),
+		text("Tŷ", 1)
+	}
+}
+
+// Masculine end nouns starting with a vowel or "h"
+town_names(masc_end_noun_start_vow) {
+	{
+		text("Aber", 1),
+		text("Ysbyty", 1),
+		text("Ystrad", 1)
+	}
+}
+
+// End adjectives
+town_names(end_adj) {
+	{
+		text("Bach", 1),
+		text("Mawr", 1),
+		text("Moel", 1),
+		text("Newydd", 1),
+		// Colours
+		text("Du", 1),
+		text("Coch", 1),
+		text("Glas", 1),
+		text("Gwyn", 1),
+		text("Gwyrdd", 1),
+		text("Melyn", 1),
+		text("Oren", 1)
+	}
+}
+
+// End mutated adjectives
+town_names(end_mut_adj) {
+	{
+		text("Fach", 1),
+		text("Mawr", 1),
+		text("Foel", 1),
+		text("Newydd", 1),
+		// Colours
+		text("Ddu", 1),    // Du
+		text("Goch", 1),   // Coch
+		text("Las", 1),    // Glas
+		text("Wen", 1),    // Gwyn
+		text("Werdd", 1),  // Gwyrdd
+		text("Melen", 1),  // Melyn
+		text("Oren", 1)
+	}
+}
+
+// noun " y " noun
+town_names(noun_y_noun) {
+	{
+		town_names(fem_start_noun_end_cons, 38),
+		town_names(masc_start_noun_end_cons, 34)
+	}
+	{
+		text(" y ", 1)
+	}
+	{
+		town_names(fem_end_noun_start_cons, 30),
+		town_names(masc_end_noun_start_cons, 37)
+	}
+}
+
+// noun " yr " noun
+town_names(noun_yr_noun) {
+	{
+		town_names(fem_start_noun_end_cons, 38),
+		town_names(masc_start_noun_end_cons, 33)
+	}
+	{
+		text(" yr ", 1)
+	}
+	{
+		town_names(fem_end_noun_start_vow, 8),
+		town_names(masc_end_noun_start_vow, 3)
+	}
+}
+
+// noun "'r " noun
+town_names(noun_r_noun) {
+	{
+		town_names(fem_start_noun_end_vow, 1),
+		town_names(masc_start_noun_end_vow, 7)
+	}
+	{
+		text("'r ", 1)
+	}
+	{
+		town_names(fem_end_noun_start_cons, 30),
+		town_names(fem_end_noun_start_vow, 8),
+		town_names(masc_end_noun_start_cons, 37),
+		town_names(masc_end_noun_start_vow, 3)
+	}
+}
+
+// masc_noun adj
+town_names(masc_noun_adj) {
+	{
+		town_names(masc_start_noun_end_cons, 33),
+		town_names(masc_start_noun_end_vow, 7)
+	}
+	{
+		text(" ", 1)
+	}
+	{
+		town_names(end_adj, 11)
+	}
+}
+
+// fem_noun adj
+town_names(fem_noun_adj) {
+	{
+		town_names(fem_start_noun_end_cons, 38),
+		town_names(fem_start_noun_end_vow, 1),
+	}
+	{
+		text(" ", 1)
+	}
+	{
+		town_names(end_mut_adj, 11)
+	}
+}
+
+town_names {
+	styles : string(STR_STYLES);
+	{
+		town_names(noun_y_noun, 124),
+		town_names(noun_yr_noun, 16),
+		town_names(noun_r_noun, 14),
+		town_names(masc_noun_adj, 11),
+		town_names(fem_noun_adj, 11)
+	}
+}

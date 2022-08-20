@@ -1,0 +1,8 @@
+##grflangid 0x01
+# This is the English language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION :{TITLE}
+
+STR_STYLES          :Welsh
