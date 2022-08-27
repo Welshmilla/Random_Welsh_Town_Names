@@ -1,2 +1,2 @@
 VERSION :0.1.0
-TITLE   :Welsh Town Names
+TITLE   :Random Welsh Town Names

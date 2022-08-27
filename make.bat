@@ -1,5 +1,5 @@
 @echo off
 
-nmlc --grf welsh_town_names.grf welsh_town_names.nml
+nmlc --grf Random_Welsh_Town_Names.grf Random_Welsh_Town_Names.nml
 
-move welsh_town_names.grf %OPENTTD_DIR%\newgrf
+move Random_Welsh_Town_Names.grf %OPENTTD_DIR%\newgrf
