@@ -222,7 +222,7 @@ town_names(end_mut_adj) {
 	}
 }
 
-// Noun ending with a consonant followed by a noun starting with a consonant
+// Noun ending with a consonant, followed by fannod, followed by a noun starting with a consonant
 town_names(noun_y_noun) {
 	{
 		town_names(fem_start_noun_end_cons, 29),
@@ -237,7 +237,7 @@ town_names(noun_y_noun) {
 	}
 }
 
-// Noun ending with a consonant followed by a noun starting with a vowel
+// Noun ending with a consonant, followed by fannod, followed by a noun starting with a vowel
 town_names(noun_yr_noun) {
 	{
 		town_names(fem_start_noun_end_cons, 28),
@@ -252,7 +252,7 @@ town_names(noun_yr_noun) {
 	}
 }
 
-// Noun ending with a vowel followed by a noun
+// Noun ending with a vowel, followed by fannod, followed by a noun
 town_names(noun_r_noun) {
 	{
 		town_names(fem_start_noun_end_vow, 1),
@@ -265,6 +265,28 @@ town_names(noun_r_noun) {
 		town_names(fem_end_noun_start_cons, 22),
 		town_names(fem_end_noun_start_vow, 5),
 		town_names(masc_end_noun_start_cons, 28),
+		town_names(masc_end_noun_start_vow, 2)
+	}
+}
+
+// Fannod followed by a noun starting with a consonant
+town_names(y_noun) {
+	{
+		text("Y ", 1)
+	}
+	{
+		town_names(fem_end_noun_start_cons, 22),
+		town_names(masc_end_noun_start_cons, 28)
+	}
+}
+
+// Fannod followed by a noun starting with a vowel
+town_names(yr_noun) {
+	{
+		text("Yr ", 1)
+	}
+	{
+		town_names(fem_end_noun_start_vow, 5),
 		town_names(masc_end_noun_start_vow, 2)
 	}
 }
@@ -303,6 +325,8 @@ town_names {
 		town_names(noun_y_noun, 127),
 		town_names(noun_yr_noun, 17),
 		town_names(noun_r_noun, 16),
+		town_names(y_noun, 2),
+		town_names(yr_noun, 1),
 		town_names(masc_noun_adj, 21),
 		town_names(fem_noun_adj, 15)
 	}
