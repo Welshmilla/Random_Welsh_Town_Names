@@ -4,5 +4,6 @@
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION :{TITLE}
+STR_GRF_URL         :{URL}
 
 STR_STYLES          :Welsh
