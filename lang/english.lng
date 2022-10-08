@@ -3,7 +3,7 @@
 
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE} {VERSION}
-STR_GRF_DESCRIPTION :{TITLE}
+STR_GRF_DESCRIPTION :{WHITE}Random Welsh Town Names{}{}{BLACK}Generates Welsh town names from a list of prefixes and suffixes.{}{}{COPYRIGHT}2022 Welshmilla{}{ORANGE}License: GPLv2
 STR_GRF_URL         :{URL}
 
 STR_STYLES          :Welsh
