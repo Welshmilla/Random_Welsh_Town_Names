@@ -3,7 +3,7 @@ grf {
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESCRIPTION);
 	url: string(STR_GRF_URL);
-	version: 0;
+	version: 2;
 	min_compatible_version: 0;
 }
 
@@ -72,6 +72,7 @@ town_names(masc_start_noun_end_cons) {
 		text("Dyffryn", 1),
 		text("Garth", 1),
 		text("Glyn", 1),
+		text("Grug", 1),
 		text("Llwyn", 1),
 		text("Llyn", 1),
 		text("Llys", 1),
@@ -85,6 +86,7 @@ town_names(masc_start_noun_end_cons) {
 		text("Penrhyn", 1),
 		text("Plas", 1),
 		text("Pwll", 1),
+		text("Tâl", 1),
 		text("Ton", 1),
 		text("Ystrad", 1)
 	}
@@ -105,21 +107,27 @@ town_names(masc_start_noun_end_vow) {
 // Feminine end nouns starting with a consonant
 town_names(fem_end_noun_start_cons) {
 	{
+		text("Fedw", 1),       // Bedw
 		text("Garn", 1),       // Carn
+		text("Gelyn", 1),      // Celyn
 		text("Goed", 1),       // Coed
+		text("Gollen", 1),     // Collen
 		text("Gors", 1),       // Cors
 		text("Graig", 1),      // Craig
 		text("Groes", 1),      // Croes
+		text("Dderwen", 1),    // Derwen
 		text("Ddol", 1),       // Dol
 		text("Ffin", 1),
 		text("Ffordd", 1),
 		text("Ffridd", 1),
 		text("Ffynnon", 1),
 		text("Waun", 1),       // Gwaun
+		text("Wern", 1),       // Gwern
 		text("Lan", 1),        // Llan
 		text("Lech", 1),       // Llech
 		text("Felin", 1),      // Melin
 		text("Nant", 1),
+		text("Onnen", 1),
 		text("Bont", 1),       // Pont
 		text("Borth", 1),      // Porth
 		text("Rhaeadr", 1),
@@ -136,6 +144,7 @@ town_names(fem_end_noun_start_vow) {
 		text("Afon", 1),
 		text("Allt", 1),
 		text("Eglwys", 1),
+		text("Eithin", 1),
 		text("Hafod", 1),
 		text("Ynys", 1)
 	}
@@ -226,14 +235,14 @@ town_names(end_mut_adj) {
 // Noun ending with a consonant, followed by fannod, followed by a noun starting with a consonant
 town_names(noun_y_noun) {
 	{
-		town_names(fem_start_noun_end_cons, 29),
-		town_names(masc_start_noun_end_cons, 34)
+		town_names(fem_start_noun_end_cons, 28),
+		town_names(masc_start_noun_end_cons, 36)
 	}
 	{
 		text(" y ", 1)
 	}
 	{
-		town_names(fem_end_noun_start_cons, 22),
+		town_names(fem_end_noun_start_cons, 28),
 		town_names(masc_end_noun_start_cons, 28)
 	}
 }
@@ -242,13 +251,13 @@ town_names(noun_y_noun) {
 town_names(noun_yr_noun) {
 	{
 		town_names(fem_start_noun_end_cons, 28),
-		town_names(masc_start_noun_end_cons, 34)
+		town_names(masc_start_noun_end_cons, 36)
 	}
 	{
 		text(" yr ", 1)
 	}
 	{
-		town_names(fem_end_noun_start_vow, 5),
+		town_names(fem_end_noun_start_vow, 6),
 		town_names(masc_end_noun_start_vow, 2)
 	}
 }
@@ -263,8 +272,8 @@ town_names(noun_r_noun) {
 		text("'r ", 1)
 	}
 	{
-		town_names(fem_end_noun_start_cons, 22),
-		town_names(fem_end_noun_start_vow, 5),
+		town_names(fem_end_noun_start_cons, 28),
+		town_names(fem_end_noun_start_vow, 6),
 		town_names(masc_end_noun_start_cons, 28),
 		town_names(masc_end_noun_start_vow, 2)
 	}
@@ -276,7 +285,7 @@ town_names(y_noun) {
 		text("Y ", 1)
 	}
 	{
-		town_names(fem_end_noun_start_cons, 22),
+		town_names(fem_end_noun_start_cons, 28),
 		town_names(masc_end_noun_start_cons, 28)
 	}
 }
@@ -287,22 +296,27 @@ town_names(yr_noun) {
 		text("Yr ", 1)
 	}
 	{
-		town_names(fem_end_noun_start_vow, 5),
+		town_names(fem_end_noun_start_vow, 6),
 		town_names(masc_end_noun_start_vow, 2)
 	}
 }
 
-// Masculine noun followed by an adjective
-town_names(masc_noun_adj) {
+// Noun, followed by a noun
+town_names(noun_noun) {
 	{
-		town_names(masc_start_noun_end_cons, 34),
+		town_names(fem_start_noun_end_cons, 28),
+		town_names(fem_start_noun_end_vow, 1),
+		town_names(masc_start_noun_end_cons, 36),
 		town_names(masc_start_noun_end_vow, 6)
 	}
 	{
 		text(" ", 1)
 	}
 	{
-		town_names(end_adj, 13)
+		town_names(fem_end_noun_start_cons, 28),
+		town_names(fem_end_noun_start_vow, 6),
+		town_names(masc_end_noun_start_cons, 28),
+		town_names(masc_end_noun_start_vow, 2)
 	}
 }
 
@@ -320,15 +334,30 @@ town_names(fem_noun_adj) {
 	}
 }
 
+// Masculine noun followed by an adjective
+town_names(masc_noun_adj) {
+	{
+		town_names(masc_start_noun_end_cons, 36),
+		town_names(masc_start_noun_end_vow, 6)
+	}
+	{
+		text(" ", 1)
+	}
+	{
+		town_names(end_adj, 13)
+	}
+}
+
 town_names {
 	styles : string(STR_STYLES);
 	{
-		town_names(noun_y_noun, 127),
-		town_names(noun_yr_noun, 17),
-		town_names(noun_r_noun, 16),
+		town_names(noun_y_noun, 100),
+		town_names(noun_yr_noun, 14),
+		town_names(noun_r_noun, 13),
 		town_names(y_noun, 2),
 		town_names(yr_noun, 1),
-		town_names(masc_noun_adj, 21),
-		town_names(fem_noun_adj, 15)
+		town_names(noun_noun, 127),
+		town_names(fem_noun_adj, 11),
+		town_names(masc_noun_adj, 15)
 	}
 }
